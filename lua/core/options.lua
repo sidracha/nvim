@@ -30,3 +30,4 @@ vim.api.nvim_set_option("mouse", "a")
 vim.o.mouse = "nv"
 
 vim.o.termguicolors = false
+
