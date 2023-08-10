@@ -31,12 +31,18 @@ return packer.startup(function(use)
   -- packer can manage itself
   use("wbthomason/packer.nvim")
 	
-
+	--colorschemes
 	use("rebelot/kanagawa.nvim")	
-	
 	use { "catppuccin/nvim", as = "catppuccin" }
-
+	
+	--file manager/browser
 	use("nvim-tree/nvim-tree.lua")
+	
+	--other stuff
+	use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+	}
 
 	if packer_bootstrap then
     require("packer").sync()

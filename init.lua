@@ -6,3 +6,4 @@ require("plugins.nvim-tree")
 
 
 vim.opt.guicursor = ""
+
